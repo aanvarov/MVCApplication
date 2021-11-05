@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using MVCWebApplication.Models;
 using Newtonsoft.Json;
 
@@ -23,7 +21,6 @@ namespace MVCWebApplication.Controllers
 
             var prodInfo = new List<Product>();
             using var client = new HttpClient();
-            Console.WriteLine(client);
             //Passing service base url
             client.BaseAddress = new Uri(baseUrl);
             client.DefaultRequestHeaders.Clear();
@@ -66,48 +63,6 @@ namespace MVCWebApplication.Controllers
             }
 
             return View(product);
-        }
-        
-        // POST: Product/Edit/5
-        [HttpPost]
-        public async Task<ActionResult> Edit(int id, Product prod)
-        {
-            try
-            {
-                // TODO: Add update logic here
-                const string baseurl = "https://localhost:5001/";
-                using (var client = new HttpClient())
-                {
-                    client.BaseAddress = new Uri(baseurl);
-                    var res = await client.GetAsync("api/Product/" + id);
-                    Product product = null;
-                    //Checking the response is successful or not which is sent using HttpClient
-                    if (res.IsSuccessStatusCode)
-                    {
-                        //Storing the response details received from web api
-                        var prResponse = res.Content.ReadAsStringAsync().Result;
-                        //Deserializing the response received from web api and storing into the Product list
-                            product = JsonConvert.DeserializeObject<Product>(prResponse);
-                    }
-                    prod.ProductCategory = product.ProductCategory;
-                    //HTTP POST
-                    var postTask = client.PutAsJsonAsync<Product>("api/Product/"+prod.Id,
-                        prod);
-                    postTask.Wait();
-                    var result = postTask.Result;
-                    if (result.IsSuccessStatusCode)
-                    {
-                        return RedirectToAction("Index");
-                    }
-                }
-                //ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
-                //return View(student);
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         public IActionResult Privacy()
