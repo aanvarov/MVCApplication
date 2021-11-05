@@ -1,51 +1,9 @@
-@model IEnumerable<MVCWebApplication.Models.Product>
-
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>@ViewData["Title"]</h1>
 
-<p>
-    @* <a asp-page="api/Product/Create">Create New</a> *@
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-                @* @Html.ActionLink("Delete", "Details", new { id=item.Id }) *@
-                @* <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> | *@
-                @* <a asp-page="./Details" asp-route-id="@item.Id">Details</a> | *@
-                @* <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a> *@
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<p>This web application is created to fulfill the requirements of the coursework given 
+    by the module of Distributed Systems and Cloud Computing</p>
