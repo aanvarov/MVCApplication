@@ -5,10 +5,7 @@
     <projectFile profileName="MVCWebApplication">MVCWebApplication.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeda0cc3-f348-4baf-bde6-df3b466f4717" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCWebApplication.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVCWebApplication.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="eeda0cc3-f348-4baf-bde6-df3b466f4717" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MVCWebApplication">
@@ -70,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636240356197</updated>
       <workItem from="1636240391677" duration="67000" />
-      <workItem from="1636301107084" duration="877000" />
+      <workItem from="1636301107084" duration="1497000" />
     </task>
     <servers />
   </component>
