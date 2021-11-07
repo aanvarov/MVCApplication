@@ -12,7 +12,7 @@ namespace MVCWebApplication.Controllers
 {
     public class CategoryController : Controller
     {
-        private const string BaseUrl = "https://localhost:5001/";
+        private const string BaseUrl = "https://localhost:5050/";
         private readonly HttpClient _client;
         
         public CategoryController()
@@ -53,6 +53,8 @@ namespace MVCWebApplication.Controllers
             if (!ModelState.IsValid) return View();
             try
             {
+                var rndId = new Random();
+                category.Id = rndId.Next(100);
                 //HTTP POST
                 var postTask = await _client.PostAsJsonAsync<Category>("api/Category",
                     category);
