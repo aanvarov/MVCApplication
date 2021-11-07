@@ -6,7 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeda0cc3-f348-4baf-bde6-df3b466f4717" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Views/Product/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Product/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCWebApplication.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVCWebApplication.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636240356197</updated>
       <workItem from="1636240391677" duration="67000" />
+      <workItem from="1636301107084" duration="877000" />
     </task>
     <servers />
   </component>

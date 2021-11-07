@@ -12,7 +12,7 @@ namespace MVCWebApplication.Controllers
 {
     public class CategoryController : Controller
     {
-        private const string BaseUrl = "https://localhost:5050/";
+        private const string BaseUrl = "https://localhost:5000/";
         private readonly HttpClient _client;
         
         public CategoryController()
