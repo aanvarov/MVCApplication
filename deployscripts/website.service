@@ -3,7 +3,7 @@ Description=Start the Website
 
 [Service]
 WorkingDirectory=/var/www/
-ExecStart=/usr/bin/dotnet run --configuration Release -- --help /var/www/app/MVCWebApplication
+ExecStart=/usr/bin/dotnet run --configuration Release -- --help /var/www/MVCWebApplication
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10

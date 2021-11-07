@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: app
+  - source: MVCWebApplication
     destination: /var/www
   - source: deployscripts/website.service
     destination: /etc/systemd/system
