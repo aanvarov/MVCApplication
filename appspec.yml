@@ -3,7 +3,6 @@ os: windows
 files:
   - source: MVCWebApplication/bin/Release/net5.0/publish
     destination: C:\webApps\MVCWebApplication
-    # nimagap
 hooks:
   ApplicationStop:
   #    - location: deployscripts/application_stop.bat
