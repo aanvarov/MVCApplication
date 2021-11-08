@@ -30,7 +30,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.MVCWebApplication">
+  <component name="RunManager" selected="Publish to folder.Publish MVCWebApplication to folder">
     <configuration name="Publish MVCWebApplication to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish runtime="Portable" target_folder="$PROJECT_DIR$/bin/net5.0/publish" target_framework="net5.0" uuid_high="4774518736997238962" uuid_low="5869777536892968538" />
       <method v="2" />
@@ -76,7 +76,7 @@
       <updated>1636240356197</updated>
       <workItem from="1636240391677" duration="67000" />
       <workItem from="1636301107084" duration="1497000" />
-      <workItem from="1636360311487" duration="4132000" />
+      <workItem from="1636360311487" duration="6273000" />
     </task>
     <servers />
   </component>
