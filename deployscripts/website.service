@@ -3,7 +3,7 @@ Description=Start the Website
 
 [Service]
 WorkingDirectory=/var/www/
-ExecStart=/usr/bin/dotnet run --configuration Release -- --help /var/www/MVCWebApplication
+ExecStart=/usr/bin/dotnet /var/www/MicroservicesAPI_10888.dll
 Restart=always
 # Restart service after 10 seconds if the dotnet service crashes:
 RestartSec=10
@@ -12,7 +12,7 @@ SyslogIdentifier=website
 #User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
-Environment=ASPNETCORE_URLS=http://*:80
+Environment=ASPNETCORE_URLS="http://*:5000;https://*:5001"
 
 [Install]
 WantedBy=multi-user.target

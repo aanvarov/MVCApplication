@@ -5,7 +5,15 @@
     <projectFile profileName="MVCWebApplication">MVCWebApplication.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeda0cc3-f348-4baf-bde6-df3b466f4717" name="Changes" comment="" />
+    <list default="true" id="eeda0cc3-f348-4baf-bde6-df3b466f4717" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCWebApplication.dir/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVCWebApplication.dir/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVCWebApplication.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVCWebApplication.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CategoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../appspec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../appspec.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deployscripts/website.service" beforeDir="false" afterPath="$PROJECT_DIR$/../deployscripts/website.service" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,11 +77,23 @@
       <updated>1636240356197</updated>
       <workItem from="1636240391677" duration="67000" />
       <workItem from="1636301107084" duration="1497000" />
+      <workItem from="1636360311487" duration="3216000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
