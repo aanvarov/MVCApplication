@@ -1,17 +1,16 @@
 version: 0.0
-os: linux
+os: windows
 files:
   - source: MVCWebApplication/bin/Release/net5.0/publish
-    destination: /var/www/
-  - source: deployscripts/website.service
-    destination: /etc/systemd/system
+    destination: C:\webApps\MVCWebApplication
+    # nimagap
 hooks:
   ApplicationStop:
-    - location: deployscripts/application_stop.sh
-      timeout: 300
+  #    - location: deployscripts/application_stop.bat
+  #      timeout: 300
   BeforeInstall:
-    - location: deployscripts/before-install.sh
-      timeout: 300
+  #    - location: deployscripts/before-install.bat
+  #      timeout: 300
   ApplicationStart:
-    - location: deployscripts/application_start.sh
-      timeout: 300
+  #   - location: deployscripts/application_start.bat
+  #     timeout: 300
