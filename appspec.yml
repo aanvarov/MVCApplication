@@ -1,7 +1,7 @@
 version: 0.0
 os: windows
 files:
-  - source: MVCWebApplication/bin/Release/net5.0/publish
+  - source: MVCWebApplication/bin/net5.0/publish
     destination: C:\webApps\MVCWebApplication
   - source: deployscripts/deletewebsite.ps1
     destination: c:\temp
