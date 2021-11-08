@@ -3,13 +3,18 @@ os: windows
 files:
   - source: MVCWebApplication/bin/Release/net5.0/publish
     destination: C:\webApps\MVCWebApplication
+  - source: deployscripts/deletewebsite.ps1
+    destination: c:\temp
+  - source: deployscripts/installwebsite.ps1
+    destination: c:\temp
+  - source: deployscripts/deletewebsite.bat
+    destination: c:\temp
+  - source: deployscripts/installwebsite.bat
+    destination: c:\temp
 hooks:
   ApplicationStop:
-  #    - location: deployscripts/application_stop.bat
-  #      timeout: 300
-  BeforeInstall:
-  #    - location: deployscripts/before-install.bat
+  #    - location: deployscripts/deletewebsite.bat
   #      timeout: 300
   ApplicationStart:
-  #   - location: deployscripts/application_start.bat
+  #   - location: deployscripts/installwebsite.bat
   #     timeout: 300
