@@ -13,7 +13,7 @@ namespace MVCWebApplication.Controllers
 {
     public class ProductController : Controller
     {
-        private const string BaseUrl = "http://ip-172-31-18-199.us-east-2.compute.internal:5000/";
+        private const string BaseUrl = "http://ec2-18-116-73-231.us-east-2.compute.amazonaws.com:5000/";
         private readonly HttpClient _client;
 
         public ProductController()
