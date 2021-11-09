@@ -12,7 +12,7 @@ namespace MVCWebApplication.Controllers
 {
     public class CategoryController : Controller
     {
-        private const string BaseUrl = "http://ec2-18-220-245-172.us-east-2.compute.amazonaws.com:5000/";
+        private const string BaseUrl = "http://ip-172-31-18-199.us-east-2.compute.internal:5000/";
         private readonly HttpClient _client;
         
         public CategoryController()
